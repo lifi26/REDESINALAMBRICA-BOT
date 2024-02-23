@@ -1,0 +1,255 @@
++ hola
+- hola, Soy un robot, esta es la informacion que te puedo ofrecer\n
+^ Nuestros telefonos\n
+^ Nuestra direccion\n
+^ Entregas\n
+^ Pagina web\n
+^ Horarios\n
+^ Menu\n
+- ¡Hola! Gracias por ponerte en contacto. ¿cuál es tu pregunta del\n
+^ tema de especificaciones de la MAC y PHY del estándar\n
+^ ISO/IEC/ANSI/IEEE 802.11?. Un pequeño tutorial o enlace para saber\n
+^ la introduccion del tema: https://www.youtube.com/watch?v=IMrcsx2WSLE \n
+
++ *mac
+- Media Access Control traducido es el control de acceso a medios\n
+^ MAC define los procedimientos que hacen posible que los distintos\n
+^ dispositivos compartan el uso del espectro radioeléctrico\n
+^ visita al sitio https://www.sciencedirect.com/science/article/pii/S2352340921004923
+
++ *phy sap
+- Son las primitivas asociadas con la comunicación\n
+^ entre la subcapa MAC IEEE 802.11 y el IEEE\n
+^ 802.11 PHY se dividen en dos categorías básicas:\n 
+^ primitivas de servicio que soportan interacciones\n
+^ Entre pares MAC; Estas primitivas de servicio que\n
+^ tienen significado local y soportan interacciones\n
+^ De subcapa a subcapa.\n
+^ visita al sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *descripciones de vectores
+- Descripciones de vectores existen Varias primitivas de servicio\n
+^ incluyen un vector de parámetros.Este vector es una lista de\n
+^ parámetros que pueden variar dependiendo del tipo de PHY\n
+^ Enumera los valores de los parámetros requeridos por el MAC o PHY\n
+^ en cada uno de los vectores de parámetros. Los parámetros en los\n
+^ vectores que son de gestión en lugar de MAC pueden ser específicos\n
+^ del PHY y se enumeran en la cláusula que cubre ese PHY\n
+^ visita al sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy data
+- Esta primitiva define la transferencia de un octeto de datos desde\n
+^ la subcapa MAC a la entidad PHY local, la primitiva proporciona\n
+^ los siguientes parámetros PHY-DATA.request. El parámetro DATA\n
+^ es un octeto de valor X 00 a X FF. Esta primitiva es generada\n
+^ por la subcapa MAC para transferir un octeto de datos a la entidad PHY\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- Esta primitiva es generada por la subcapa MAC para transferir\n
+^ un octeto de datos a la entidad PHY Este primitivo solo se puede\n
+^ emitir después de una respuesta de inicialización de transmisión.\n
+^ PHY TXSTART.confirm desde el PHY capa\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy txstart
+- Esta primitiva es una solicitud de la subcapa MAC a la entidad\n
+^ PHY local para iniciar la transmisión de un MPDU\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *mpdu
+- Es la MAC Protocol Data Unit, que traducido es Unidad de datos del\n
+^ protocolo MAC, este protocolo MPDU que se utiliza en redes WiFi\n
+^ basadas en el estándar IEEE 802.11\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy txstart request
+- Es una Semantica de la primitiva de servicio. Esta primitiva\n
+^ proporciona los siguientes parámetros Solicitud PHY TXSTART\n
+^ llamado tambien TXVECTOR\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *txvector
+- El TXVECTOR representa una lista de parámetros que la subcapa MAC\n 
+^ proporciona a la entidad PHY local para transmitir una MPDU.\n 
+^ Este vector contiene parámetros de gestión tanto PLCP como PHY.\n
+^ Se enumeran los parámetros PHY requeridos\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy txstart confirm
+- Esta primitiva la emite la subcapa PHY a la entidad MAC local\n
+^ para confirmar el inicio de una transmisión. La subcapa PHY\n
+^ emitirá esta primitiva en respuesta a cada primitiva PHY TXSTART\n 
+^ request emitida por la subcapa MAC\n 
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy txend request
+- Esta primitiva es una solicitud de la subcapa MAC a la entidad\n
+^ PHY local, para que se complete la transmisión actual de la MPDU\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *phy rxstart indication
+- Esta primitiva es una indicación de la subcapa PHY a la entidad\n 
+^ MAC local de que el PLCP ha recibido un delimitador de marco\n 
+^ de inicio válido SFD y encabezado PLCP, donde el PHY RXSTART\n
+^ indication se llama tambien RXVECTOR\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *rxvector
+- El RXVECTOR representa una lista de parámetros que la subcapa\n 
+^ PHY proporciona a la entidad MAC local en recibo de un\n 
+^ encabezado PLCP válido. Este vector puede contener tanto MAC \n
+^ como parámetros de gestión MAC\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *plcp
+- El PLCP o Physical Layer Convergente Procedure traducido\n
+^ es Procedimiento Convergente de Capa Física es una transmisión\n
+^ entre el MAC y el medio físico dependiente de una interfaz radio\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *sfd
+- El sfd es la base de datos de fuentes Spline es un formato de\n
+^ fuente nativo para el software de edición de fuentes. El software\n
+^ es compatible con muchos otros formatos de fuentes comunes\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *msdu
+- El MSDU es en ingles MAC service data unit traducido es La unidad\n
+^ de datos de servicio MAC, es la unidad de datos de servicio que\n
+^ se recibe de la subcapa de control de enlace lógico LLC que se\n
+^ encuentra por encima de la subcapa de controlde acceso a\n
+^ medios MAC en una pila de protocolos\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *servicio de datos asincronicos
+- Este servicio proporciona a las entidades LLC pares la capacidad de\n
+^ intercambiar unidades de datos de servicio MAC MSDU. Admite este\n 
+^ servicio, el MAC local utiliza los servicios de nivel PHY\n
+^ subyacentes para transportar una MSDU a un par entidad MAC, donde\n
+^ se entregará a la LLC par. Dicho transporte MSDU asíncrono se\n
+^ realiza sobre la base del mejor esfuerzo sin conexión\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *servicios de seguridad
+- Los servicios de seguridad en IEEE 802.11 son proporcionados por\n
+^ el servicio de autenticación y el mecanismo WEP. El alcance de los\n
+^ servicios de seguridad proporcionados se limita al intercambio de\n
+^ datos de estación a estación\n 
+^ Del sitio https://jis-eurasipjournals.springeropen.com/articles/10.1186/1687-417X-2011-4 \n
+- El servicio de seguridad que ofrece una implementación WEP IEEE\n
+^ 802.11 es el cifrado de la MSDU. A los efectos de este estándar,\n 
+^ WEP se ve como un servicio lógico ubicado dentro de la subcapa MAC.\n
+^ Las implementaciones reales del servicio WEP son transparentes\n 
+^ para el LLC y otras capas por encima de la subcapa MAC\n
+^ Del sitio https://jis-eurasipjournals.springeropen.com/articles/10.1186/1687-417X-2011-4 \n
+
++ *servicios msdu
+- Los servicios MSDU proporcionados por la subcapa MAC permiten, y\n
+^ pueden requerir en ciertos casos, el reordenamiento de MSDU.\n 
+^ El MAC no reordena intencionalmente las MSDU, excepto cuando sea\n
+^ necesario para mejorar la probabilidad de una entrega exitosa en\n 
+^ función del modo operativo actual administración de energía\n
+^ del dispositivo designado.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- El servicio MSDU proporciona estación receptora. El único efecto\n 
+^ de este reordenamiento si lo hay, para el conjunto de MSDU\n
+^ recibidas en la interfaz de servicio MAC de cualquier estación\n
+^ individual, es un cambio en el orden de entrega de las MSDU\n
+^ de difusión y multidifusión, en relación con las MSDU dirigidas,\n
+^ que se originan desde una única dirección de estación de origen.\n 
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *servicios de datos mac
+- Los servicios de datos MAC IEEE 802.11 admite las siguientes primitivas\n
+^ de servicio, tal como se define en ISO/IEC 802.11 y son los siguientes\n 
+^ MA-DATOS UNIDAD.solicitud, MA-UNITDATA.indicación y \n
+^ MA-UNITDATA-STATUS.indication. Estos servicios son las definiciones\n 
+^ LLC de las primitivas y especifican las restricciones de valor de\n
+^ parámetro impuestas por IEEE 802.11\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
+! var lunes = Menu del Lunes\n 
+^ Chiles en nogada 20.50\n 
+^ Chilaquiles 15.50\n
+
+! var martes = Menu del Martes \n
+^ Pambasos 20.50 \n
+^ Huitlacoche 15.50 \n
+
+! var miercoles = Menu del Miercoles \n
+^ Enchiladas 120.50 \n
+^ Caldo de olla 15.50 \n
+
+! var jueves = Menu del Jueves \n
+^ Tacos 120.50 \n
+^ Quesadillas 15.50 \n
+
+! var viernes = Menu del Viernes \n
+^ Tortas 20.50 \n
+^ Tacos 15.50 \n
+
+! var sabado = Menu del Sabado \n
+^ Enchiladas 120.50 \n
+^ Huitlacoche 15.50 \n
+
+! var domingo = Los domingo esta cerrado
+
+! var horario = Lunes abrimos de 08:00 a 18:00\n
+^ Martes abrimos de 08:00 a 18:00\n
+^ Miercoles abrimos de 08:00 a 18:00\n
+^ Jueves abrimos de 08:00 a 18:00\n
+^ Viernes abrimos de 08:00 a 18:00\n
+^ Sabados abrimos de 08:00 a 12:00\n
+^ Domingos Cerrado\n
+
++ [*] lunes{weight=2} [*]
+- <bot lunes>
+
++ [*] martes{weight=4} [*]
+- <bot martes>
+
++ [*] miercoles{weight=2} [*]
+- <bot miercoles>
+
++ [*] jueves{weight=2} [*]
+- <bot jueves>
+
++ [*] viernes{weight=2} [*]
+- <bot viernes>
+
++ [*] sabado{weight=2} [*]
+- <bot sabado>
+
++ [*] domingo{weight=2} [*]
+- <bot domingo>
+
+
++ [*] (menu|carta) [*]
+- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
+
++ como estas
+@ hola
+
++ hay alguien*
+@ hola
+
++ [*] (telefono|celular|cel) [*]
+- Nuestro telefono es 725648221
+
++ [*] (direccion|ubicacion|lugar) [*]
+- Nuestra direccion Colonia Emiliano Zapata Acapulco Gro
+- Nos encontramos ubicados en la Colonia Emiliano Zapata Acapulco Gro
+
++ [*] (entregas|a domicilio) [*]
+- Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
+
++ [*] (pagina web|web|pagina) [*]
+- Visitanos en https://www.programadornovato.com
+
++ [*] (hora|horarios|dias|abierto){weight=3} [*]
+- <bot horario>
+
++ *
+- Recuerda que soy un robot, me podrías preguntar de otra forma
+- Intenta hacer tu pregunta de otra manera.
+
+
