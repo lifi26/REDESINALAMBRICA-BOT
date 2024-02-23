@@ -167,6 +167,11 @@
 ^ parámetro impuestas por IEEE 802.11\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
++ *ma unitdata request
+- Esta primitiva solicita una transferencia de una MSDU desde una entidad\n
+^ de subcapa de LLC local a una LLC de un solo par\n 
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
 ^ Chilaquiles 15.50\n
