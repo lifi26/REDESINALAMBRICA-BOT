@@ -168,8 +168,15 @@
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *ma unitdata request
-- Esta primitiva solicita una transferencia de una MSDU desde una entidad\n
-^ de subcapa de LLC local a una LLC de un solo par\n 
+- Esta primitiva MA UNITDATA request solicita una transferencia de\n
+^ una MSDU desde una entidadde subcapa de LLC local\n
+^ a una LLC de un solo par\n 
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *semantica de la primitiva de servicio
+- La semantica de la primitiva de servicio es el parámetro de información de\n
+^ enrutamiento especifica de la ruta deseada para la transferencia de datos de\n
+^ un valor nulo indica no se debe utilizar el enrutamiento de origen.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 ! var lunes = Menu del Lunes\n 
