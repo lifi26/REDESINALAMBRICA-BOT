@@ -179,6 +179,39 @@
 ^ un valor nulo indica no se debe utilizar el enrutamiento de origen.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
++ *parametros de ma unitdata request
+- Los parámetros de la primitiva MA UNITDATA request son los siguientes que\n
+^ es la dirección de la fuente, dirección de destino, información de\n
+^ enrutamiento, datos, prioridad y clase de servicio.\n
+^ Del sitio https://ieeexplore.ieee.org/document/9363693 \n
+
++ *parametros de ma unitdata indication
+- Los parámetros de la primitiva MA UNITDATA INDICATION son los siguientes la\n
+^ dirección de la fuente, dirección de destino, información de enrutamiento,\n
+^ datos, estado de recepción, prioridad y clase de servicio.\n
+^ Del sitio https://ieeexplore.ieee.org/document/9363693 \n
+
++ *parametros de ma unitdata status indication
+- Los parámetros de la primitiva MA UNITDATA STATUS indication son los siguientes\n
+^ la dirección de la fuente, dirección de destino, estado de transmisión\n
+^ datos de prioridad y clase de servicio proporcionada.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *efecto del recibo de ma unitdata request
+- La recepción de esta primitiva MA UNITDATA request hace que la entidad de subcapa\n
+^ MAC agregue todos los campos especificados MAC, incluidos DA, SA y todos los campos\n
+^ que son exclusivos de IEEE 802.11 y pase el marco con el formato adecuado a la\n
+^ parte inferior de capas para la transferencia a una entidad o entidades\n
+^ de la subcapa MAC del mismo nivel.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *ma unitdata indication
+- Esta primitiva define la transferencia de una MSDU desde la entidad de la subcapa MAC\n
+^ a la entidad de la subcapa LLC o entidades en el caso de direcciones de grupo. En\n
+^ ausencia de error, el contenido del parámetro de datos está lógicamente completo y sin\n
+^ cambios en relación con el parámetro de datos en el MA UNITDATA request asociado primitivo.\n 
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
 ^ Chilaquiles 15.50\n
