@@ -212,6 +212,42 @@
 ^ cambios en relación con el parámetro de datos en el MA UNITDATA request asociado primitivo.\n 
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
++ *genera ma unitdata indication
+- Esta primitiva MA UNITDATA indication se pasa de la entidad de la subcapa MAC a la subcapa\n
+^ LLC entidad o entidades para indicar la llegada de una trama a la entidad de subcapa MAC\n
+^ local, los marcos solo se informan si tienen un formato válido en la subcapa MAC, se\n
+^ reciben sin error, se reciben con WEP válido o nulo cifrado y su dirección de destino\n 
+^ designa la entidad de la subcapa MAC local\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- La MA UNITDATA indication es la primitiva  que pasa de la entidad de la subcapa MAC a la\n
+^ entidad de la subcapa LLC para indicar el estado del servicio proporcionado para la\n
+^ correspondiente solicitud MAc de DATOS de UNIDADES primitivos.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
+
++ *efecto de recepcion de ma unitdata indication
+- El efecto de la recepción de esta primitiva por parte de la subcapa LLC depende de la\n
+^ validez y el contenido del marco.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *ma unitdata status indication
+- La MA UNITDATA STATUS indication, es la primitiva que tiene significado local y\n
+^ proporciona a la subcapa LLC información de estado para la primitiva MAC de\n
+^ DATOS de UNIDAD anterior\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *efecto de recepcion de ma unitdata status indication
+- El efecto de la recepción de MA UNITDATA STATUS indication es la primitiva por\n
+^ parte de la subcapa LLC depende del tipo de operación empleada. por la entidad\n
+^ de la subcapa LLC.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *formatos de marco
+- El formato de marco son todas las tramas MAC que se especifica en este escapsulamiento.\n
+^ Todas las estaciones deberán poder construir adecuadamente para la transmisión y\n
+^ decodificación de tramas al recibirlas\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
 ^ Chilaquiles 15.50\n
