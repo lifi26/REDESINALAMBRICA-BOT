@@ -245,7 +245,7 @@
 + *formatos de marco
 - El formato de marco son todas las tramas MAC que se especifica en este escapsulamiento.\n
 ^ Todas las estaciones deberán poder construir adecuadamente para la transmisión y\n
-^ decodificación de tramas al recibirlas\n
+^ decodificación de tramas al recibirlas dentro del marco\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 ! var lunes = Menu del Lunes\n 
