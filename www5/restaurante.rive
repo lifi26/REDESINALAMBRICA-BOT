@@ -6,6 +6,7 @@
 ^ Pagina web\n
 ^ Horarios\n
 ^ Menu\n
+^ la introduccion del tema: https://www.youtube.com/watch?v=IMrcsx2WSLE \n
 - ¡Hola! Gracias por ponerte en contacto. ¿cuál es tu pregunta del\n
 ^ tema de especificaciones de la MAC y PHY del estándar\n
 ^ ISO/IEC/ANSI/IEEE 802.11?. Un pequeño tutorial o enlace para saber\n
@@ -60,6 +61,13 @@
 ^ protocolo MAC, este protocolo MPDU que se utiliza en redes WiFi\n
 ^ basadas en el estándar IEEE 802.11\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- MPDU es la MAC protocol data units traducido es son las unidades de datos del\n
+^ protocolo MAC o tramas en la subcapa MAC, que se describen como una secuencia\n
+^ de campos en orden específico, representa los campos y subcampos tal como\n
+^ aparecen en la trama MAC y en el orden en que se pasan al protocolo de\n
+^ convergencia de la capa física PLCP, de izquierda a derecha.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
 
 + *phy txstart request
 - Es una Semantica de la primitiva de servicio. Esta primitiva\n
@@ -242,10 +250,19 @@
 ^ de la subcapa LLC.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
-+ *formatos de marco
++ *formato de marco de mac
 - El formato de marco son todas las tramas MAC que se especifica en este escapsulamiento.\n
 ^ Todas las estaciones deberán poder construir adecuadamente para la transmisión y\n
 ^ decodificación de tramas al recibirlas dentro del marco\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *formato de marco general de mac
+- El formato de marco general es una trama MAC que comprende un conjunto de campos que\n
+^ aparecen en un orden fijo en todas las tramas.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- El formato de marco general es la trama MAC que son los campos Dirección 2, Dirección\n
+^ 3, Control de Secuencia, Dirección 4 y Trama del cuerpo solo está presente en\n
+^ ciertos tipos de marcos de la MAC.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 ! var lunes = Menu del Lunes\n 
