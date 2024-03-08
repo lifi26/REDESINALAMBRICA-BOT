@@ -303,6 +303,13 @@
 ^ actual o la MPDU actual a seguir. Se establece en 0 en todos los demás marcos\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
++ *campo de reinicio
+- El campo reinicio tiene una longitud de 1 bit y se establece en una de cualquier\n
+^ trama de datos o de tipo de gestión que sea una retransmisión, de un cuadro anterior.\n
+^ Se establece en 0 en todos los demás marcos. De una estación receptora que utiliza\n
+^ esta indicación para ayudar en la proceso de eliminación de fotogramas duplicados\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/2831 \n
+
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
 ^ Chilaquiles 15.50\n
