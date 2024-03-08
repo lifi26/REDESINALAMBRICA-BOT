@@ -255,6 +255,15 @@
 ^ Todas las estaciones deberán poder construir adecuadamente para la transmisión y\n
 ^ decodificación de tramas al recibirlas dentro del marco\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+- Los formatos de trama MAC son cada marco que consta de los siguientes componentes básicos\n
+^ a. Un encabezamiento MAC que traducido es MAC header, que comprende información de control\n
+^ de trama, duración, dirección y control de secuencia\n
+^ b. Un cuerpo de trama de longitud variable que es en ingles variable length frame body\n
+^ que contiene información específica del tipo de trama\n
+^ c. Una secuencia de verificación de trama FCS que la abreviatura es frame check sequence\n
+^ de FCS traduciendo es secuencia de verificación de trama, que contiene un código\n
+^ de redundancia cíclica que su abreviatura es CRC de 32 bits\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *formato de marco general de mac
 - El formato de marco general es una trama MAC que comprende un conjunto de campos que\n
@@ -263,6 +272,35 @@
 - El formato de marco general es la trama MAC que son los campos Dirección 2, Dirección\n
 ^ 3, Control de Secuencia, Dirección 4 y Trama del cuerpo solo está presente en\n
 ^ ciertos tipos de marcos de la MAC.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *formato de marco general
+- El formato de marco general es un campo de Control de cuadro que consta de los siguientes\n
+^ subcampos que son Versión de protocolo, Tipo, Subtipo, A DS, Desde DS, más fragmentos,\n
+^ reintentar, administración de energía, más datos y privacidad equivalente por cable WEP.\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *campo de version de protocolo
+- El campo de Versión de protocolo tiene una longitud de 2 bits y no varía en tamaño ni\n
+^ ubicación en todas las revisiones de este estándar. Para este estándar, el valor de la\n
+^ versión del protocolo es 0. Todos los demás valores están reservados, la revisión el\n
+^ nivel se incrementará sólo cuando exista una incompatibilidad fundamental entre una\n
+^ nueva revisión y la edición anterior de la norma. Un dispositivo que recibe un marco\n
+^ con un nivel de revisión superior al que admite descartar la trama sin indicación a\n
+^ la estacion emisora o a LLC\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *campo de tipo y subtipo
+- El campo Tipo tiene una longitud de 2 bits y el campo Subtipo tiene una longitud de 4\n
+^ bits. Los campos Tipo y Subtipo juntos identifiquen la función del marco. Hay tres\n
+^ tipos de marcos control, datos y gestión. Cada uno de los tipos de trama tiene varios\n
+^ subtipos definidos de las combinaciones válidas de tipo y subtipo de la MAC\n
+^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
+
++ *campos de mayor fragmentos
+- El campo  con mayor fragmentos tiene una longitud de 1 bit y se establece en 1 todos\n
+^ los marcos de datos, el tipo de gestión que tienen otro fragmento de la MSDU\n
+^ actual o la MPDU actual a seguir. Se establece en 0 en todos los demás marcos\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 ! var lunes = Menu del Lunes\n 
