@@ -258,26 +258,26 @@
 - Los formatos de trama MAC son cada marco que consta de los siguientes componentes básicos\n
 ^ a. Un encabezamiento MAC que traducido es MAC header, que comprende información de control\n
 ^ de trama, duración, dirección y control de secuencia\n
-^ b. Un cuerpo de trama de longitud variable que es en ingles variable length frame body\n
+^ b. Un cuerpo de trama de longitud variable que es en ingles variable length  frame body\n
 ^ que contiene información específica del tipo de trama\n
 ^ c. Una secuencia de verificación de trama FCS que la abreviatura es frame check sequence\n
-^ de FCS traduciendo es secuencia de verificación de trama, que contiene un código\n
-^ de redundancia cíclica que su abreviatura es CRC de 32 bits\n
+^ de FCS traduciendo es secuencia de verificación de trama, que contiene un código de\n
+^ redundancia cíclica que su abreviatura es CRC de 32 bits\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *formato de marco general de mac
-- El formato de marco general es una trama MAC que comprende un conjunto de campos que\n
-^ aparecen en un orden fijo en todas las tramas.\n
+- El formato de marco general es una trama MAC que comprende un conjunto\n
+^ de campos que aparecen en un orden fijo en todas las tramas.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
-- El formato de marco general es la trama MAC que son los campos Dirección 2, Dirección\n
-^ 3, Control de Secuencia, Dirección 4 y Trama del cuerpo solo está presente en\n
-^ ciertos tipos de marcos de la MAC.\n
+- El formato de marco general es la trama MAC que son los campos Dirección 2,\n
+^ Dirección 3, Control de Secuencia, Dirección 4 y Trama del cuerpo solo\n
+^ está presente en ciertos tipos de marcos de la MAC.\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *formato de marco general
-- El formato de marco general es un campo de Control de cuadro que consta de los siguientes\n
-^ subcampos que son Versión de protocolo, Tipo, Subtipo, A DS, Desde DS, más fragmentos,\n
-^ reintentar, administración de energía, más datos y privacidad equivalente por cable WEP.\n
+- El formato de marco general es un campo de Control de cuadro que consta de\n
+^ los siguientes subcampos que son Versión de protocolo, Tipo, Subtipo, A DS,\n
+^ Desde DS, más fragmentos, reintentar, administración de energía, más datos\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *campo de version de protocolo
@@ -308,7 +308,7 @@
 ^ trama de datos o de tipo de gestión que sea una retransmisión, de un cuadro anterior.\n
 ^ Se establece en 0 en todos los demás marcos. De una estación receptora que utiliza\n
 ^ esta indicación para ayudar en la proceso de eliminación de fotogramas duplicados\n
-^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/2831 \n
+^ Del sitio https://ieeexplore.ieee.org/document/9363693 \n
 
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
