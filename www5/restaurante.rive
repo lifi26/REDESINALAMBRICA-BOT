@@ -57,7 +57,7 @@
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
 
 + *mpdu
-- Es la MAC Protocol Data Unit, que traducido es Unidad de datos del\n
+- MPDU es la MAC Protocol Data Unit, que traducido es Unidad de datos del\n
 ^ protocolo MAC, este protocolo MPDU que se utiliza en redes WiFi\n
 ^ basadas en el estándar IEEE 802.11\n
 ^ Del sitio https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/28315 \n
@@ -308,7 +308,34 @@
 ^ trama de datos o de tipo de gestión que sea una retransmisión, de un cuadro anterior.\n
 ^ Se establece en 0 en todos los demás marcos. De una estación receptora que utiliza\n
 ^ esta indicación para ayudar en la proceso de eliminación de fotogramas duplicados\n
-^ Del sitio https://ieeexplore.ieee.org/document/9363693 \n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
+
++ *campo de gestion de energia
+- El campo Administración de energía tiene una longitud de 1 bit y se utiliza para\n
+^ indicar el modo de administración de energía de un STA. El valor de este campo\n
+^ permanece constante en cada trama de una STA particular dentro de un intercambio\n
+^ de tramas, El valor indica el modo en el que estará la estación después de\n
+^ completar con éxito la secuencia de intercambio de tramas\n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
+
++ *sta
+- El STA tambien se llama estaciones inalámbricas, todos los dispositivos inalámbricos\n
+^ que se unen a una red WiFi, ya sean móviles, portátiles, de una estación inalámbrica\n
+^ puede ser una PC, un ordenador portátil, un teléfono o un módulo central.\n
+^ Cuando dos o más STA están conectadas de forma inalámbrica, forman un conjunto\n
+^ de servicios básicos. Este es el componente básico de una red WiFi\n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
+
++ *mayor campo de datos
+- El campo de mayor de datos tiene 1 bit de longitud y se usa para indicar a una\n
+^ STA en modo de ahorro de energía que más de las MSDU o MPDU se almacenan en\n
+^ bufer para esa estaciones inalámbricas en el AP.\n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
+- El campo de mas datos es válido en datos dirigidos o tramas de tipo de gestión\n
+^ transmitidas por un AP a una STA en modo de ahorro de energía. Un valor de 1\n
+^ indica que en almenos una MSDU almacenada en búfer o MPDU, esta presente\n
+^ para la misma STA\n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
 
 ! var lunes = Menu del Lunes\n 
 ^ Chiles en nogada 20.50\n 
