@@ -311,7 +311,7 @@
 ^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
 
 + *campo de gestion de energia
-- El campo Administración de energía tiene una longitud de 1 bit y se utiliza para\n
+- El campo gestion de energía tiene una longitud de 1 bit y se utiliza para\n
 ^ indicar el modo de administración de energía de un STA. El valor de este campo\n
 ^ permanece constante en cada trama de una STA particular dentro de un intercambio\n
 ^ de tramas, El valor indica el modo en el que estará la estación después de\n
@@ -335,6 +335,14 @@
 ^ transmitidas por un AP a una STA en modo de ahorro de energía. Un valor de 1\n
 ^ indica que en almenos una MSDU almacenada en búfer o MPDU, esta presente\n
 ^ para la misma STA\n
+^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
+
++ *campo wep
+- El campo WEP tiene una longitud de 1 bit que se establece en 1 si el campo\n
+^ Cuerpo del marco contiene información que se ha procesado por el algoritmo\n
+^ WEP, el campo solo se establece en 1 dentro de marcos de tipo Datos, marcos\n
+^ de tipo Gestión y WEP subtipo de Autenticación, el campo WEP se establece en\n
+^ 0 en todos los demás marcos; Cuando el bit WEP se establece en 1.\n
 ^ Del sitio https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9363693 \n
 
 ! var lunes = Menu del Lunes\n 
